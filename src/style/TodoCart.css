@@ -1,0 +1,79 @@
+/* Container for individual todo card */
+.todo-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 5px 0;
+}
+
+/* Container for the content inside the todo card */
+.todo-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Optional spacing between <p> elements */
+}
+
+/* Title, level, and status styling */
+.todo-content p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+/* Hover effect for the todo card */
+.todo-cart:hover {
+    background-color: #e2e2e2; /* Lighter background on hover */
+    transform: scale(1.02); /* Slightly scale up on hover */
+}
+
+/* Buttons container */
+.todo-actions {
+    display: flex;
+    flex-direction: column; /* Keep buttons in a row */
+    gap: 10px; /* Space between the buttons */
+    justify-content: center;
+}
+
+/* Style for the todo buttons */
+.todo-cart button {
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #007BFF; /* Default blue color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease; /* Smooth background color change */
+}
+
+/* Edit Button Specific Styles */
+.todo-cart button.edit {
+    background-color: #28a745; /* Green color */
+}
+
+.todo-cart button.edit:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Delete Button Specific Styles */
+.todo-cart button.delete {
+    background-color: #dc3545; /* Red color */
+}
+
+.todo-cart button.delete:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+/* Hover effect for all buttons */
+.todo-cart button:hover {
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Focus effect for buttons (for accessibility) */
+.todo-cart button:focus {
+    outline: 2px solid #0056b3; /* Add a focus outline on buttons */
+}

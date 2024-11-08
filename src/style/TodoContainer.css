@@ -1,0 +1,13 @@
+.App {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Make sure the container takes up the full height of the viewport */
+}
+.todo-container {
+    width: 600px; /* Set a max-width for the Todo List container */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
